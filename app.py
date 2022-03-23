@@ -17,5 +17,5 @@ app.add_middleware(
 )
 
 @app.get('/predict')
-async def get_hotels(loss_of_capacity: int, managnese_cathode_voltage_conduction: int, temperature_during_high_performance: int, cobalt_anode_voltage_conduction: int, internal_resistance: int, internal_humidity: int):
+async def predict(loss_of_capacity: int, managnese_cathode_voltage_conduction: int, temperature_during_high_performance: int, cobalt_anode_voltage_conduction: int, internal_resistance: int, internal_humidity: int):
     return json.loads(get_prediction(loss_of_capacity, managnese_cathode_voltage_conduction, temperature_during_high_performance, cobalt_anode_voltage_conduction, internal_resistance, internal_humidity).to_json(orient='records'))[0]
