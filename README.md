@@ -1,4 +1,4 @@
-# Team Renovo AI Model
+# Team Renovo AI Model - SAP for battery estimation
 
 ## Prerequisites: This prototype has been developed in Python
 
